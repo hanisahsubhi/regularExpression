@@ -25,4 +25,16 @@ String[] freeString = chainedString.split(regex);
  *  freeString = ("Lets", "break", "this", "chain", "!")
  */
   }
+ 
+ 
+//Regex pattern
+  // To search the pattern having two characters in between A and l in the given string "A%(lication".
+String searchStr = "A%(lication";
+String regexStr = "A..lication";
+System.out.println(searchStr.matches(regexStr)); 
+
+//To check if a number is found 0 or n times after X in the given string.
+String searchStr = "X4756Y";
+String regexStr = "X\\d*Y";
+System.out.println(searchStr.matches(regexStr));    
 }
